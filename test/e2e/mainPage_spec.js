@@ -16,6 +16,19 @@ describe('iPlayerBBC', function() {
     var navbar = $('div.header')
     expect(navbar.getText()).toContain('Home');
   })
+  
+  it('Has a navigation page for letter selection', function() {
+    browser.get('/');
+    var navbar = $('div.header')
+    expect(navbar.getText()).toContain('A-Z')
+  })
+  
+  it('Has a drop down menu for letter selection', function() {
+    browser.get('/');
+    element(by.css('[ng-click="isCollapsed = !isCollapsed"]')).click();
+    var navbar = $('div.navbar')
+    expect(navbar.getText()).toContain('A-B-C-D-E-F-G')
+  })
 })
 
   

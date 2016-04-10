@@ -1,12 +1,12 @@
 'use strict';
 
-angular
-  .module('iPlayerBbcApp', [
+var iPlayerApp = angular.module('iPlayerBbcApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
-    'ngSanitize'
+    'ngSanitize', 
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider

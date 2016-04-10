@@ -1,5 +1,4 @@
 'use strict';
 
-angular.module('iPlayerBbcApp')
-  .controller('AboutCtrl', function () {
+iPlayerApp.controller('AboutCtrl', function () {
   });

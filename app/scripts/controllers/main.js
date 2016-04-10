@@ -1,9 +1,4 @@
 'use strict';
 
-angular.module('iPlayerBbcApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'BBC Index',
-      'Main page'
-    ];
+iPlayerApp.controller('MainCtrl', function () {
   });
