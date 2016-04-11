@@ -1,8 +1,8 @@
 <div class="jumbotron">
   <h1>Welcome to iPlayer Lister</h1>
-  <ul ng-repeat='programme in main.listData'>
+  <ul ng-repeat='item in main.listData'>
     <li>
-      {{programme.title}}
+      {{item[0].title}}<span><img id={{item[0].id}} ng-src={{item[1]}}></span>
     </li>
   </ul>
 </div>

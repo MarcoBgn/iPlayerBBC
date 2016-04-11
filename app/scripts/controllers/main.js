@@ -1,9 +1,10 @@
 'use strict';
 
-iPlayerApp.controller('MainCtrl', function(ProgramsList) {
+iPlayerApp.controller('MainCtrl', function(ProgrammesList) {
   var self = this;
   
-  ProgramsList.getList().then(function(response) {
+  ProgrammesList.getList().then(function(response) {
     self.listData = response;
+    console.log(self.listData)
   })
 });
