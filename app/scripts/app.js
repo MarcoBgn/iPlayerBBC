@@ -1,6 +1,6 @@
 'use strict';
 
-var iPlayerApp = angular.module('iPlayerBbcApp', [
+var iPlayerApp = angular.module('iPlayerApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',

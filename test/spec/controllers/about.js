@@ -2,7 +2,7 @@
 
 describe('Controller: AboutCtrl', function () {
 
-  beforeEach(module('iPlayerBbcApp'));
+  beforeEach(module('iPlayerApp'));
 
   var AboutCtrl,
     scope;

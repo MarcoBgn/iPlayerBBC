@@ -2,7 +2,7 @@
 
 describe('Controller: MainCtrl', function () {
 
-  beforeEach(module('iPlayerBbcApp'));
+  beforeEach(module('iPlayerApp'));
 
   var MainCtrl,
     scope;
@@ -14,7 +14,4 @@ describe('Controller: MainCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(MainCtrl.awesomeThings.length).toBe(2);
-  });
 });
