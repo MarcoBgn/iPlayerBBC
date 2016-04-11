@@ -6,3 +6,8 @@
     </li>
   </ul>
 </div>
+
+<div class='pagination' ng-controller='PagerController as pager'>
+  <h3> Current Page {{pager.info.page}} </h3>
+  <uib-pagination items-per-page='20' total-items='pager.info.count' ng-model="pager.info.page" ng-change='pager.pageChange()'></uib-pagination>
+</div>

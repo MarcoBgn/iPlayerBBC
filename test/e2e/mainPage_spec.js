@@ -40,6 +40,11 @@ describe('iPlayerBBC', function() {
       var main = $('div.jumbotron')
       expect(element(by.id('p02b4jth')).isPresent()).toBe(true);  
     })
+    
+    it('Paginates the results if the letter has more than 20 entries', function() {
+      var main = $('div.pagination')
+      expect(main.getText()).toContain('Previous', 'Next');  
+    })
   })
 })
 
