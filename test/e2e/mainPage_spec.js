@@ -32,8 +32,8 @@ describe('iPlayerBBC', function() {
     })
     
     it('Displays a list of programs retrieved from the API', function() {
-      var main = $('p.ng-binding')
-      expect(main.getText()).toContain('Abadas');
+      var main = $('div.jumbotron')
+      expect(main.getText()).toContain('Abadas', "A Blackpool Big Band Boogie: Jools Holland and his Rhythm & Blues Orchestra");
     })
   })
 })
