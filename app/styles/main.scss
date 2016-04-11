@@ -10,12 +10,27 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding: 0.2em 0;
 }
 
+h4 {
+  width: 200px;
+}
+
 body {
   padding: 0;
 }
 
 .AZ {
   cursor: pointer;
+}
+
+.programme {
+  width: 400px;
+  border: none;
+  text-align: left;
+}
+
+.programme_img {
+  position: relative;
+  left: 200px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

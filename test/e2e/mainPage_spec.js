@@ -28,7 +28,7 @@ describe('iPlayerBBC', function() {
     it('Has a drop down menu for letter selection', function() {
       element(by.css('[ng-click="isCollapsed = !isCollapsed"]')).click();
       var navbar = $('div.navbar')
-      expect(navbar.getText()).toContain('A-B-C-D-E-F-G');
+      expect(navbar.getText()).toContain('A B C D E F G');
     })
     
     it('Displays a list of programs retrieved from the API', function() {
@@ -44,6 +44,13 @@ describe('iPlayerBBC', function() {
     it('Paginates the results if the letter has more than 20 entries', function() {
       var main = $('div.pagination')
       expect(main.getText()).toContain('Previous', 'Next');  
+    })
+    
+    it('Organises the list alphabetically', function() {
+      element(by.css('[ng-click="isCollapsed = !isCollapsed"]')).click();
+      element(by.css('[ng-click="letter.letterChange(\'b\')"]')).click();
+      var main = $('div.jumbotron')
+      expect(main.getText()).toContain('Baby Jake');  
     })
   })
 })

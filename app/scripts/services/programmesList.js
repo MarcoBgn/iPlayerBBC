@@ -2,9 +2,10 @@ iPlayerApp.factory('ProgrammesList', function($http) {
   var self = this;
   var Programmes = {};
   self.page = (sessionStorage.getItem('page') || 1)
+  self.letter = (sessionStorage.getItem('character') || 'a')
   
   Programmes.getList = function() {
-    return $http.get('https://ibl.api.bbci.co.uk/ibl/v1/atoz/a/programmes?page=' + self.page).then(function(response) {
+    return $http.get('https://ibl.api.bbci.co.uk/ibl/v1/atoz/'+self.letter+'/programmes?page='+self.page).then(function(response) {
       this.list;
       this.parsed = [];
       this.image_url = [];
