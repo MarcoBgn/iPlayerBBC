@@ -30,6 +30,6 @@ describe('ProgramsList service', function() {
   it('Retrieves a list of programs', function() {
     ProgramsListService.getList();
     httpBackend.flush();
-    expect(list.title).toBe('program1')
+    expect(list[0].title).toBe('program1')
   })
 })
