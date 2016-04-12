@@ -1,9 +1,8 @@
-{ "name": "iPlayerBBC",
+{
+  "name": "iPlayerBBC",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A tech test for BBC digital",
-  "repository": "https://github.com/marcocode/iPlayerBBC",
-  "license": "MIT",
   "devDependencies": {
     "grunt-karma": "^0.12.2",
     "jasmine": "^2.4.1",
@@ -11,7 +10,7 @@
     "karma": "^0.13.22",
     "karma-phantomjs-launcher": "^1.0.0",
     "phantomjs": "^2.1.7",
-    "protractor": "3.0.0", 
+    "protractor": "3.0.0"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install",
@@ -27,6 +26,6 @@
   },
   "dependencies": {
     "bower": "^1.7.7",
-    "express": "^4.13.4",
+    "express": "^4.13.4"
   }
 }
