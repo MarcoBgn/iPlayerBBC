@@ -30,14 +30,18 @@ describe('PageInfo service', function() {
   })
   
   it('Retrieves info about the TotalItems in the current letter', function() {
-    PageInfoService.getList();
     httpBackend.flush();
-    expect(list.count).toBe(74)
+    PageInfoService.getList().then(function(response) {
+      expect(response.data).toBeDefined();
+      expect(response.data.atoz_programmes.count).toBe(74);
+    });
   })
   
   it('Retrieves info about page number in the current letter', function() {
-    PageInfoService.getList();
     httpBackend.flush();
-    expect(list.page).toBe(1)
+    PageInfoService.getList().then(function(response) {
+      expect(response.data).toBeDefined();
+      expect(response.data.atoz_programmes.page).toBe(1);
+    });
   })
 })

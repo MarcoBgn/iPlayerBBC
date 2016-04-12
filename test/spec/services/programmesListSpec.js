@@ -30,14 +30,20 @@ describe('ProgrammesList service', function() {
   })
   
   it('Retrieves a list of programs', function() {
-    ProgrammesListService.getList();
     httpBackend.flush();
-    expect(programmes_list[0][0].title).toBe('programme1')
+    ProgrammesListService.getList().then(function(response) {
+      expect(response.data.atoz_programmes).toBe({'elements' : [
+            {"title"  : "programme1",
+             "images" : {"standard" : 'http://ichef.bbci.co.uk/images/ic/{recipe}/test.jpg'}},
+          ]
+        })
+    });
   })
   
   it('Includes parsed image_url in programmes_list array ', function() {
-    ProgrammesListService.getList();
     httpBackend.flush();
-    expect(programmes_list[0][1]).toBe('http://ichef.bbci.co.uk/images/ic/192x108/test.jpg')
+    ProgrammesListService.getList().then(function(response) {
+      expect(response.data.atoz_programmes.elements.images.standard).toBe('http://ichef.bbci.co.uk/images/ic/192x108/test.jpg')
+    });
   })
 })

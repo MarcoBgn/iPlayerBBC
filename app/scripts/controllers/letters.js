@@ -1,6 +1,6 @@
 'use strict';
 
-iPlayerApp.controller('LettersController', function(PageInfo, $window) {
+iPlayerApp.controller('LettersController', ['PageInfo', '$window', function(PageInfo, $window) {
   var self = this;
   
   PageInfo.getList().then(function(response) {
@@ -11,4 +11,4 @@ iPlayerApp.controller('LettersController', function(PageInfo, $window) {
     sessionStorage.setItem('character', letter);
     $window.location.reload();
   };
-});
+}]);
