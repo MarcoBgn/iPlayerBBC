@@ -5,5 +5,5 @@ iPlayerApp.controller('MainCtrl', function(ProgrammesList) {
   
   ProgrammesList.getList().then(function(response) {
     self.listData = response;
-  })
+  });
 });
