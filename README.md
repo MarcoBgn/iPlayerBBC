@@ -5,7 +5,9 @@
 
 ------------------------------------------------
 
-Visit deployed app on [heroku](https://i-player-lister.herokuapp.com/)
+###Visit deployed app on [heroku](https://i-player-lister.herokuapp.com/)
+
+------------------------------------------------
 
 ## Development
 
