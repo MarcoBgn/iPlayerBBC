@@ -10,9 +10,9 @@ describe('iPlayerBBC', function() {
     beforeEach(function() {
       browser.get('/');
     })
-    it('Has a navigation bar with link iPlayerBbc', function() {
+    it('Has a navigation bar with link About', function() {
       var navbar = $('div.header')
-      expect(navbar.getText()).toContain('iPlayerBbc');
+      expect(navbar.getText()).toContain('About');
     })
   
     it('Has a navigation bar with link Home', function() {
@@ -51,6 +51,14 @@ describe('iPlayerBBC', function() {
       element(by.css('[ng-click="letter.letterChange(\'b\')"]')).click();
       var main = $('div.jumbotron')
       expect(main.getText()).toContain('Baby Jake');  
+    })
+    
+    it('Has a filter function that allows to search for a specific programme', function() {
+      element(by.model('query')).sendKeys('Koh')
+      var main = $('div.jumbotron')
+      expect(main.getText()).not.toContain('Abadas');  
+      expect(main.getText()).not.toContain('Kohlhaas');  
+      
     })
   })
 })
