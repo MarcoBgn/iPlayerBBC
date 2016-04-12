@@ -1,4 +1,4 @@
-# iPlayerBBC - Programme List 
+# iPlayerBBC - Programmes List 
 ------------------------------------------------
 
 ![MainPage](app/images/screenShot1.png?raw=true "iPlayerBBC Programme List")
