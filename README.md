@@ -11,9 +11,11 @@
 
 ## Locally
 
+After cloning run `npm install` and `bower install` to update the system
+
 Run `grunt serve` for preview using `localhost:9000`.
 
-## Testing
+### Testing
 
 Running `grunt test` will run the unit tests with karma.
 
