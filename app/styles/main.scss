@@ -59,6 +59,14 @@ body {
   bottom: 15px;
 }
 
+.pagination {
+  li {
+    a {
+      color: #ffe6f0;
+    }
+  }
+}
+
 a.ng-binding {
   background: rgba(48,48,48,1);
   background: -moz-linear-gradient(45deg, rgba(48,48,48,1) 0% , rgba(56,56,56,0.98) 12% , rgba(64,64,64,0.97) 25% , rgba(43,43,43,0.95) 39% , rgba(28,28,28,0.93) 50% , rgba(0,0,0,0.93) 51% , rgba(10,10,10,0.92) 60% , rgba(28,28,28,0.89) 76% , rgba(18,18,18,0.87) 91% , rgba(10,10,10,0.86) 100% );
