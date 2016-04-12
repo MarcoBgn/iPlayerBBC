@@ -1,4 +1,4 @@
-iPlayerApp.controller('PagerController', function(PageInfo, $window) {
+iPlayerApp.controller('PagerController', ['$window', 'PageInfo', '$anchorScroll', function($window, PageInfo, $anchorScroll) {
   var self = this;
   
   PageInfo.getList().then(function(response) {
@@ -8,5 +8,6 @@ iPlayerApp.controller('PagerController', function(PageInfo, $window) {
   self.pageChange = function() {
     sessionStorage.setItem('page', self.info.page)
     $window.location.reload();
+    $anchorScroll();
   }
-})
+}])
