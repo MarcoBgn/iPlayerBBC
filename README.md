@@ -1,7 +1,9 @@
 # iPlayerBBC - Programme List 
 ------------------------------------------------
 
-![Main Page](images/screenShot1.png?raw=true "iPlayerBBC Programme List")
+![MainPage](app/images/screenShot1.png?raw=true "iPlayerBBC Programme List")
+
+------------------------------------------------
 
 Visit deployed app on [heroku](https://i-player-lister.herokuapp.com/)
 
